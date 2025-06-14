@@ -1,9 +1,17 @@
-<h1>{{ title }}</h1>
-<p><b>{{ boasvindas }}</b></p>
-<hr>
-<ul>
+{% extends 'base.html.twig' %}
+{% block title %}{{ parent() }} - Home{% endblock %}
+{% block body %}
+    <h1>{{ title }}</h1>
+    <p><b>{{ boasvindas }}</b></p>
+    <hr>
+    <ul>
 {# Este é o "for" dos usuários #}
 {% for user in users %}
-<li><b>Nome:</b> {{ user.nome }} | <b>Telefone:</b> {{ user.telefone }}</li>
+{% if user.nome == 'Lea Organa' %}
+        <li style="color: red"><b>Nome:</b> {{ user.nome|upper }} | <b>Telefone:</b> {{ user.telefone }}</li>
+{% else %}
+        <li><b>Nome:</b> {{ user.nome }} | <b>Telefone:</b> {{ user.telefone }}</li>
+{% endif %}
 {% endfor %}
-</ul>
+    </ul>
+{% endblock %}
