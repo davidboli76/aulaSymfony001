@@ -48,4 +48,10 @@ class HelloController
     {
         return new Response('Esta é a sexta página!');
     }
+
+    #[Route('/pagina07')]
+    public function pagina07(): Response
+    {
+        return new Response('Esta é a sétima página!');
+    }
 }
