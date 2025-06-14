@@ -30,4 +30,10 @@ class HelloController
     {
         return new Response('Esta é a quarta página!');
     }
+
+    #[Route('/pagina5')]
+    public function pagina5(): Response
+    {
+        return new Response('Esta é a quarta página!');
+    }
 }
