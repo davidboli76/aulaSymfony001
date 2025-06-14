@@ -10,7 +10,7 @@ class HelloController
     #[Route('/')]
     public function index(): Response
     {
-        return new Response('Fala, macacada!');
+        return new Response('Esta é a página principal!');
     }
 
     #[Route('/pagina2')]
@@ -34,6 +34,6 @@ class HelloController
     #[Route('/pagina5')]
     public function pagina5(): Response
     {
-        return new Response('Esta é a quarta página!');
+        return new Response('Esta é a quinta página!');
     }
 }
