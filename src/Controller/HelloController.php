@@ -13,27 +13,39 @@ class HelloController
         return new Response('Esta é a página principal!');
     }
 
-    #[Route('/pagina2')]
-    public function pagina2(): Response
+    #[Route('/pagina01')]
+    public function pagina01(): Response
+    {
+        return new Response('Esta é a página principal!');
+    }
+
+    #[Route('/pagina02')]
+    public function pagina02(): Response
     {
         return new Response('Esta é a segunda página!');
     }
 
-    #[Route('/pagina3')]
-    public function pagina3(): Response
+    #[Route('/pagina03')]
+    public function pagina03(): Response
     {
         return new Response('Esta é a terceira página!');
     }
 
-    #[Route('/pagina4')]
-    public function pagina4(): Response
+    #[Route('/pagina04')]
+    public function pagina04(): Response
     {
         return new Response('Esta é a quarta página!');
     }
 
-    #[Route('/pagina5')]
-    public function pagina5(): Response
+    #[Route('/pagina05')]
+    public function pagina05(): Response
     {
         return new Response('Esta é a quinta página!');
+    }
+
+    #[Route('/pagina06')]
+    public function pagina06(): Response
+    {
+        return new Response('Esta é a sexta página!');
     }
 }
