@@ -24,4 +24,10 @@ class HelloController
     {
         return new Response('Esta é a terceira página!');
     }
+
+    #[Route('/pagina4')]
+    public function pagina4(): Response
+    {
+        return new Response('Esta é a quarta página!');
+    }
 }
