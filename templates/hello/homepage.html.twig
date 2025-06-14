@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+<p><b>{{ boasvindas }}</b></p>
+<hr>
+<ul>
+{# Este é o "for" dos usuários #}
+{% for user in users %}
+<li><b>Nome:</b> {{ user.nome }} | <b>Telefone:</b> {{ user.telefone }}</li>
+{% endfor %}
+</ul>
